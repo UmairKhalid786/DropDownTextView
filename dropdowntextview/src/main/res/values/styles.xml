@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DropDownTv">
+        <item name="android:drawableRight">@drawable/ic_down_black</item>
+        <item name="android:padding">@dimen/size_device_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/size_device_16</item>
+        <item name="android:background">@drawable/round_corner_white_bg</item>
+        <item name="android:textColor">@color/basic_black</item>
+    </style>
+</resources>

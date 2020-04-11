@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/light_grey"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.techlad.dropdowntextview.DropDownTextView
+        android:id="@+id/optionsTv"
+        style="@style/DropDownTv"
+        android:padding="16dp"
+        android:hint="Select Options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  />
+
+    <com.techlad.dropdowntextview.DropDownTextView
+        android:id="@+id/options2Tv"
+        style="@style/DropDownTv"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Select Options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  />
+</RelativeLayout>

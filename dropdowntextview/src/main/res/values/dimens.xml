@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_device_12">12dp</dimen>
+    <dimen name="size_device_16">16dp</dimen>
+</resources>
