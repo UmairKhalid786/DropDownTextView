@@ -2,6 +2,7 @@
 
 A light weight library for simple DropDown Solution with TextView.
 
+
 ## How to
 To get this project into your build:
 ### Step 1
@@ -18,13 +19,25 @@ allprojects {
 ```
 ### Step 1
 Open app module gradle file and add the dependency
-```java
+```gradle
 dependencies {
 	implementation 'com.github.UmairKhalid786:ColorStrings:1.0.1'
 }
 ```
 ### How to use it ?
 After following above mentioned steps you are ready to code , Sample code is pasted from example given in this repo.
+
+```xml
+ <com.techlad.dropdowntextview.DropDownTextView
+        android:id="@+id/optionsTv"
+        style="@style/DropDownTv"
+        android:padding="16dp"
+        android:hint="Select Options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  />
+
+```
+
 ```kotlin
         //Simple Text Array
         val arrayList = arrayListOf<String>()
@@ -52,5 +65,6 @@ After following above mentioned steps you are ready to code , Sample code is pas
         */
         options2Tv.setOptions(arrayList)
 ```
+
 ### Output
 [![smoutput](https://github.com/UmairKhalid786/DropDownTextView/screenshots/top.png "smoutput")](https://github.com/UmairKhalid786/DropDownTextView/screenshots/bottom.png  "smoutput")
