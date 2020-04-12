@@ -1,6 +1,6 @@
 # ColorStrings
 
-A light weight library which handles dropdown On TextView for Android.
+A light weight library for simple DropDown Solution with TextView 
 
 ## How to
 To get this project into your build:
@@ -25,25 +25,24 @@ dependencies {
 ```
 ### How to use it ?
 After following above mentioned steps you are ready to code , Sample code is pasted from example given in this repo.
-```java
-TextView textView = (TextView) findViewById(R.id.attributed_tv);
-List<ColoredString> coloredStringsList  = new ArrayList<>();
+```xml
+ <com.techlad.dropdowntextview.DropDownTextView
+        android:id="@+id/optionsTv"
+        style="@style/DropDownTv"
+        android:padding="16dp"
+        android:hint="Select Options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  />
+```
 
-//Add create your colored String objects
-ColoredString coloredString1 = new ColoredString(Color.BLACK , "Hello ");
-ColoredString coloredString2 = new ColoredString(Color.RED , "Colored ");
-ColoredString coloredString3 = new ColoredString(Color.BLACK , "World");
+```kotlin
+    val arrayList = arrayListOf<String>()
 
-//add them to array of this objects
-coloredStringsList.add(coloredString1);
-coloredStringsList.add(coloredString2);
-coloredStringsList.add(coloredString3);
+        arrayList.add("Option 1")
+        arrayList.add("Option 2")
+        arrayList.add("Option 3")
 
-//And then call this function to get SpannableStringBuilder
-SpannableStringBuilder builder = StringPainter.getColoredText(coloredStringsList);
-
-//Set this builder to textView without converting using toString() method on builder
-textView.setText(builder , BufferType.SPANNABLE);
+        optionsTv.setOptions(arrayList)
 ```
 ### Output
 [![smoutput](https://ibb.co/jX2Tzy "smoutput")](https://ibb.co/jX2Tzy "smoutput")
