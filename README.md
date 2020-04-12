@@ -21,7 +21,7 @@ allprojects {
 Open app module gradle file and add the dependency
 ```gradle
 dependencies {
-	implementation 'com.github.UmairKhalid786:ColorStrings:1.0.1'
+	implementation 'com.github.UmairKhalid786:DropDownTextView:1.0'
 }
 ```
 ### How to use it ?
@@ -67,4 +67,4 @@ After following above mentioned steps you are ready to code , Sample code is pas
 ```
 
 ### Output
-[![smoutput](https://github.com/UmairKhalid786/DropDownTextView/screenshots/top.png "smoutput")](https://github.com/UmairKhalid786/DropDownTextView/screenshots/bottom.png  "smoutput")
+[![smoutput](https://github.com/UmairKhalid786/DropDownTextView/tree/master/screenshots/top.png "smoutput")](https://github.com/UmairKhalid786/DropDownTextView/tree/master/screenshots/bottom.png  "smoutput")
