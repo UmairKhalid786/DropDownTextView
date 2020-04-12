@@ -67,4 +67,5 @@ After following above mentioned steps you are ready to code , Sample code is pas
 ```
 
 ### Output
+![Screenshot](screenshots/top.png)
 [![smoutput](https://github.com/UmairKhalid786/DropDownTextView/tree/master/screenshots/top.png "smoutput")](https://github.com/UmairKhalid786/DropDownTextView/tree/master/screenshots/bottom.png  "smoutput")
