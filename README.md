@@ -1,6 +1,6 @@
-# ColorStrings
+# DropDownTextView
 
-A light weight library which handles dropdown On TextView for Android.
+A light weight library for simple DropDown Solution with TextView.
 
 ## How to
 To get this project into your build:
@@ -25,25 +25,32 @@ dependencies {
 ```
 ### How to use it ?
 After following above mentioned steps you are ready to code , Sample code is pasted from example given in this repo.
-```java
-TextView textView = (TextView) findViewById(R.id.attributed_tv);
-List<ColoredString> coloredStringsList  = new ArrayList<>();
+```kotlin
+        //Simple Text Array
+        val arrayList = arrayListOf<String>()
 
-//Add create your colored String objects
-ColoredString coloredString1 = new ColoredString(Color.BLACK , "Hello ");
-ColoredString coloredString2 = new ColoredString(Color.RED , "Colored ");
-ColoredString coloredString3 = new ColoredString(Color.BLACK , "World");
+        arrayList.add("Option 1")
+        arrayList.add("Option 2")
+        arrayList.add("Option 3")
 
-//add them to array of this objects
-coloredStringsList.add(coloredString1);
-coloredStringsList.add(coloredString2);
-coloredStringsList.add(coloredString3);
+        //Set dropDown options to our custom textView and Boom you are done with it
+        optionsTv.setOptions(arrayList)
 
-//And then call this function to get SpannableStringBuilder
-SpannableStringBuilder builder = StringPainter.getColoredText(coloredStringsList);
+        //This is how you set click listener
+        optionsTv.setClickListener(object : DropDownTextView.DropDownClickListener{
+            override fun onDropDownClick(value: String?, index: Int) {
+                //Value and index of selected item
+            }
+        })
 
-//Set this builder to textView without converting using toString() method on builder
-textView.setText(builder , BufferType.SPANNABLE);
+        //As it is textview so you can get selected text
+        var text = optionsTv.text.toString()
+
+        /*
+        Second dropdown for bottom example
+        It will auto adjust space according to available screen
+        */
+        options2Tv.setOptions(arrayList)
 ```
 ### Output
-[![smoutput](https://ibb.co/jX2Tzy "smoutput")](https://ibb.co/jX2Tzy "smoutput")
+[![smoutput](https://github.com/UmairKhalid786/DropDownTextView/screenshots/top.png "smoutput")](https://github.com/UmairKhalid786/DropDownTextView/screenshots/bottom.png  "smoutput")
